@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <div class="container">
+       <div class="title">Registration For Supplier</div>
+       <form [formGroup]="regdata" (ngSubmit)="reg(regdata.value)">
+           <div class="user">
+               <div class="input">
+                   <span class="details">FullName</span>
+                   <input type="text" placeholder="Enter name" name="Fullname"  formControlName="name" required>
+               </div>
+               <div class="input">
+                   <span class="details">Email</span>
+                   <input type="email" placeholder="Enter Email" name="Email" formControlName="email" required>
+               </div>
+               <div class="input">
+                   <span class="details">UserName</span>
+                   <input type="text" placeholder="Enter Username" name="User" formControlName="username" required>
+               </div>
+               <div class="input">
+                   <span class="details">Password</span>
+                   <input type="password" placeholder="Enter password" name="pass" formControlName="password" required>
+               </div>
+               <div class="input">
+                   <span class="details">ConfirmPassword</span>
+                   <input type="password" placeholder="ConfirmPassword" name="ConfirmPassword"  formControlName="confirmpassword" required>
+               </div>
+               <div class="input">
+                   <span class="details">phonenumber</span>
+                   <input type="text" placeholder="phonenumber" name="phno" formControlName="phoneno" required>
+               </div>
+               <div class="input">
+                   <span class="details">street</span>
+                   <input type="text" placeholder="street" name="street" formControlName="street" required>
+               </div>
+               <div class="input">
+                   <span class="details">Village</span>
+                   <input type=" text" placeholder="village" name="Village" formControlName="village" required>
+               </div>
+               <div class="input">
+                   <span class="details">Mandal</span>
+                   <input type=" text" placeholder="mandal" name="mandal"  formControlName="mandal" required>
+               </div>
+               <div class="input">
+                   <span class="details">city</span>
+                   <input type="text" placeholder="city" name="City"   formControlName="city" required>
+               </div>
+               <div class="input">
+                   <span class="details"> State</span>
+                   <input type=" text" placeholder="State" name="State"  formControlName="state" required>
+               </div>
+               <div class="input">
+                   <span class="details">Zipcode</span>
+                   <input type=" text" placeholder="zipcode" name="Zipcode"  formControlName="zipcode" required>
+               </div>
+               
+               <div class="gender-details">
+                <label class="ab">Gender</label> <br>
+                <input type="radio" name="male" formControlName="gender">Male 
+                <input type="radio" name="male" formControlName="gender">Female   
+                <input type="radio" name="male" formControlName="gender">other
+               </div>
+               <span class="reg">Already have an account ?<a routerLink="/navbar/suppiler"> Login here</a></span>
+           </div>
+           <div class="button">
+               <input type="submit" value="Register">
+           </div>
+       </form>
+   </div>
+</body>
+</html>
