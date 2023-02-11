@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+.main{
+    height:109vh;
+    width: 100%;
+}
+ul{
+    display:flex;
+    justify-content:center;
+    margin-left: 170px;
+    padding-bottom: 2px;  
+}
+ul li{
+    list-style-type: none;
+    margin-left: 70px;
+    margin-top: 28px;
+}
+ul li a{
+    text-decoration: none ;
+    color:rgba(215, 20, 20, 0.975);
+    font-weight: bold;
+    font-family: Arial;
+    transition: 0.4s;  
+}
+ul li a:hover{
+    color: blue;
+}
+.row{
+    background-color:rgb(135, 222, 205);
+    overflow: hidden;
+}
+.col-xl-4{
+    margin-top: 24px;
+    margin-left:8px;
+    font-style: oblique;
+    
+}
+.col-xl-7{
+    padding-bottom: 17px;
+}
